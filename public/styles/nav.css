@@ -1,8 +1,31 @@
 .nav-bar {
+  position: fixed;
   color: #ffffff;
   background-color: #4056A1;
-  font-family: 'Bungee', 'Source Sans Pro', sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 24px;
+  display: flex;
+  padding: 1.5em;
+  height: 120px;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+.write-and-icon {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-solid {
+  display: flex;
+  align-self: center;
+  color: #ff3f3f;
+}
+
+.logo {
+  font-family: 'Bungee', sans-serif;
 }
 
 
