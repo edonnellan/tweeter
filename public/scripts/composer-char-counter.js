@@ -7,7 +7,7 @@ $(document).ready(function() {
 
     const reverseCount = 140 - count;
 
-    //finding the counter withing the DOM
+    //finding the counter within the DOM
     const textAreaParents = $(this).parents();
     const directParent = textAreaParents[0];
     const parentChildren = directParent.children;
@@ -20,9 +20,9 @@ $(document).ready(function() {
 
     //logic for colour if positive or negative number
     if ($(counterChild).val() < 0) {
-      $(counterChild).css("color", "red")
+      $(counterChild).css("color", "red");
     } else {
-      $(counterChild).css("color", "#535149")
+      $(counterChild).css("color", "#535149");
     }
 })
 });

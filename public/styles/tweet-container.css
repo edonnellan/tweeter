@@ -5,6 +5,11 @@ section.tweet-container {
   border: 3px solid #535149;
   margin-top: 30px;
   font-weight: 300;
+  
+}
+
+section.tweet-container:hover {
+  box-shadow: 10px 5px 5px #a3add1;
 }
 
 article.tweet header {
@@ -53,8 +58,11 @@ footer i.fa-solid {
   padding-inline: 0.5em;
 }
 
-footer.tweet-footer-icons{
+footer.tweet-footer-icons {
   justify-content: flex-end;
   justify-items: end;
+}
 
+footer i.fa-solid:hover {
+  color: #ffc495;
 }
