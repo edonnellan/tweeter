@@ -23,10 +23,11 @@ textarea {
   border-right-style: hidden;
   border-left-style: hidden;
   border-bottom-style: "groove";
-  background-color: #F3F1EB;
   border-width: 0.5vh;
-  margin-bottom: 25px;
+  background-color: #F3F1EB;
   color: #535149;
+  margin-bottom: 25px;
+
 }
 
 .button-and-counter {
@@ -42,35 +43,3 @@ button {
   background-color: #4056A1;
   border: hidden;
 }
-
-section.tweet-container {
-  width: 100%;
-  border: #535149;
-  border-width: 2vh;
-  margin-top: 30px;
-  font-weight: 300;
-}
-
-/* article.tweet {
-  width: 100%;
-  border: #535149;
-} */
-
-article.tweet header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  background-color: #F3F1EB;
-  background-image: none;
-  padding-top: 0;
-  
-}
-
-article.tweet footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-

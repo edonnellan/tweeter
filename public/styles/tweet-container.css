@@ -1,0 +1,48 @@
+section.tweet-container {
+  width: 100%;
+  padding: 5%;
+  padding-top: 1%;
+  border: 3px solid #535149;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #F3F1EB;
+  background-image: none;
+  padding-top: 0;
+}
+
+section.tweet-container div.user-icon-and-name {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.fa-user {
+  color: #535149;
+  padding-right: 0.5em;
+}
+
+
+section.tweet-container header p {
+  justify-items: flex-end;
+}
+
+article.tweet p.tweet-content {
+  border: 3px solid #535149;
+  border-top: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  padding-bottom: 3%;
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
