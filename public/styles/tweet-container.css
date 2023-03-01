@@ -45,4 +45,16 @@ article.tweet footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-inline: 1em;
+}
+
+footer i.fa-solid {
+  color: #535149;
+  padding-inline: 0.5em;
+}
+
+footer.tweet-footer-icons{
+  justify-content: flex-end;
+  justify-items: end;
+
 }
