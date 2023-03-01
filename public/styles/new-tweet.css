@@ -10,10 +10,6 @@ form {
   align-items: center;
 }
 
-/* label["tweet-text"] {
-
-} */
-
 .button-and-counter {
   display: flex;
   width: 100%;
@@ -23,15 +19,12 @@ form {
 }
 
 button {
-  /* display: flex; */
   color: #FFFFFF;
   background-color: #4056A1;
+  border: hidden;
 }
 
-/* .counter {
-  display: flex;
-  justify-items: flex-end;
-} */
+
 
 label[for="tweet-text"] {
   font-weight: 600;
