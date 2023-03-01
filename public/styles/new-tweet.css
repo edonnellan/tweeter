@@ -10,22 +10,6 @@ form {
   align-items: center;
 }
 
-.button-and-counter {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "Bungee", sans-serif;
-}
-
-button {
-  color: #FFFFFF;
-  background-color: #4056A1;
-  border: hidden;
-}
-
-
-
 label[for="tweet-text"] {
   font-weight: 600;
   margin-top: 50px;
@@ -43,6 +27,50 @@ textarea {
   border-width: 0.5vh;
   margin-bottom: 25px;
   color: #535149;
+}
+
+.button-and-counter {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: "Bungee", sans-serif;
+}
+
+button {
+  color: #FFFFFF;
+  background-color: #4056A1;
+  border: hidden;
+}
+
+section.tweet-container {
+  width: 100%;
+  border: #535149;
+  border-width: 2vh;
+  margin-top: 30px;
+  font-weight: 300;
+}
+
+/* article.tweet {
+  width: 100%;
+  border: #535149;
+} */
+
+article.tweet header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #F3F1EB;
+  background-image: none;
+  padding-top: 0;
+  
+}
+
+article.tweet footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 
