@@ -17,11 +17,19 @@ module.exports = function(DataHelpers) {
     });
   });
 
-  tweetsRoutes.post("/", function(req, res) {
-    if (!req.body.text) {
-      res.status(400).json({ error: 'invalid request: no data in POST body'});
-      return;
-    }
+  ///// New submit listener //////
+
+  $("/").submit(function(event) {
+    alert("Handler for .submit() called.");
+    event.preventDefault();
+  });
+
+  // tweetsRoutes.post("/", function(req, res) {
+  //   // console.log("HEY");
+  //   if (!req.body.text) {
+  //     res.status(400).json({ error: 'invalid request: no data in POST body'});
+  //     return;
+  //   }
 
     const user = req.body.user ? req.body.user : userHelper.generateRandomUser();
     const tweet = {
@@ -32,13 +40,14 @@ module.exports = function(DataHelpers) {
       created_at: Date.now()
     };
 
+    
     DataHelpers.saveTweet(tweet, (err) => {
       if (err) {
         res.status(500).json({ error: err.message });
       } else {
         res.status(201).send();
       }
-    });
+    // });
   });
 
   return tweetsRoutes;
