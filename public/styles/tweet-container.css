@@ -2,13 +2,19 @@
   width: 100%;
   padding: 5%;
   padding-top: 1%;
-  border: 3px solid #535149;
   margin-top: 30px;
   font-weight: 300;
-  
 }
 
-#tweets-container:hover {
+article.tweet {
+  width: 100%;
+  padding: 5%;
+  padding-top: 1%;
+  border: 3px solid #535149;
+  margin-top: 30px;
+}
+
+article.tweet:hover {
   box-shadow: 10px 5px 5px #a3add1;
 }
 

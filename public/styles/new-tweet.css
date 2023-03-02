@@ -27,7 +27,7 @@ textarea {
   background-color: #F3F1EB;
   color: #535149;
   margin-bottom: 25px;
-
+  outline: none;
 }
 
 .button-and-counter {
@@ -42,4 +42,5 @@ button {
   color: #FFFFFF;
   background-color: #4056A1;
   border: hidden;
+  /* shadow: 5px #a3add1; */
 }
