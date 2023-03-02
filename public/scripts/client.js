@@ -21,9 +21,27 @@ const tweetData = {
 $(document).ready(function() {
   console.log("client.js document ready?");
   
-  renderTweets(data);
-
+  console.log($("form"), "the form")
+  $("form").submit(function(event) {
+    // alert("Handler for .submit() called.");
+    event.preventDefault();
+    
+    let formData = $(this).serialize()
+    
+    console.log("formData", formData)
+    
+    $.ajax({
+      method: "POST",
+      url: "/tweets",
+      data: formData,
+      success: (tweetResponse) => {renderTweets(tweetResponse)},
+      error: (err) => {}
+    });
   });
+
+  // renderTweets(data);
+
+});
 
   const createTweetElement = function(data) {
     const $tweet = $("<article>").addClass("tweet");
