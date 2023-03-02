@@ -1,4 +1,4 @@
-section.tweet-container {
+#tweets-container {
   width: 100%;
   padding: 5%;
   padding-top: 1%;
@@ -8,7 +8,7 @@ section.tweet-container {
   
 }
 
-section.tweet-container:hover {
+#tweets-container:hover {
   box-shadow: 10px 5px 5px #a3add1;
 }
 
@@ -22,7 +22,7 @@ article.tweet header {
   padding-top: 0;
 }
 
-section.tweet-container div.user-icon-and-name {
+#tweets-container div.user-icon-and-name {
   display: flex;
   flex-direction: row;
   
@@ -34,7 +34,7 @@ section.tweet-container div.user-icon-and-name {
 }
 
 
-section.tweet-container header p {
+#tweets-container header p {
   justify-items: flex-end;
 }
 
@@ -64,5 +64,5 @@ footer.tweet-footer-icons {
 }
 
 footer i.fa-solid:hover {
-  color: #ffc495;
+  color: #5673d989;
 }
