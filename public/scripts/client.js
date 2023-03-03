@@ -86,7 +86,7 @@ $(document).ready(function () {
     const $tweet = $("<article>").addClass("tweet"); //creating the element with a class to accept dynamic tweets
 
     const html = `
-          <header>
+          <header class="tweet-header">
             <div class="user-icon-and-name">
               <i class="fa-solid fa-user"></i>
               <h5>${escape(userData.name)}</h5>
