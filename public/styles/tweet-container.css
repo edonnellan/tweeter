@@ -72,3 +72,19 @@ footer.tweet-footer-icons {
 footer i.fa-solid:hover {
   color: #5673d989;
 }
+
+@media only screen and (min-width: 1024px) {
+  main.container {
+    width: 100%;
+    justify-content: flex-end;
+    padding: 5%;
+    padding-top: 1%;
+    margin-top: 30px;
+    font-weight: 300;
+  }
+
+  form {
+    padding-top: 4rem;
+  }
+
+}

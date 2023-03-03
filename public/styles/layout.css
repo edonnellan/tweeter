@@ -40,5 +40,12 @@ main {
 } */
 
 @media only screen and (min-width: 1024px) {
-  
+  body {
+    display: flex;
+    flex-direction: row;
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+  }
 }
