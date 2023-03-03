@@ -28,22 +28,9 @@ div.avatar-name span {
  }
 
  div.header-avatar {
-  /* margin: 5rem;
-  margin-top: 5rem; */
   padding: 3rem;
   background-color: #ffc496;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
  }
 
- 
-
 }
-
-/* @media screen only and (min-width: 1024) and (max-width: 1263) {
-  div.avatar-name {
-    background-color: red;
-   }
-} */
-
-/* margin: 3rem;
-  margin-top: 5rem;  */
