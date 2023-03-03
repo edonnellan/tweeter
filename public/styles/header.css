@@ -14,7 +14,7 @@ div.avatar-name span {
   font-weight: 300;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1207px) {
  header.avatar {
   display: flex;
   height: fit-content;

@@ -35,7 +35,7 @@ main {
 
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1207px) {
   body {
     display: flex;
     flex-direction: row;
