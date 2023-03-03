@@ -4,20 +4,9 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-// const tweetData = {
-//   "user": {
-//     "name": "Newton",
-//     "avatars": "https://i.imgur.com/73hZDYK.png",
-//       "handle": "@SirIsaac"
-//     },
-//   "content": {
-//       "text": "If I have seen further it is by standing on the shoulders of giants"
-//     },
-//   "created_at": 1461116232227
-// }
 
 $(document).ready(function () {
-  console.log("client.js document ready?");
+  console.log("client.js document is ready");
 
   const escape = function (str) {
     let div = document.createElement("div");
@@ -50,15 +39,16 @@ $(document).ready(function () {
     console.log("formData", formData);
 
     let tweetText = $("#tweet-text").val();
-    const emptyTweet = $("#tweet-empty");
-    const longTweet = $("#tweet-too-long");
-    console.log("emptyTweet: ", emptyTweet);
+    const $error = $(".error");
+    console.log("error", $error);
+    
 
     if (!tweetText) {
-      emptyTweet.slideDown(1000, function () {
-        $("p .error span").innerHTML = "Tweet cannot be empty!";
-        return;
-      });
+      $error.find("span").val("Tweet cannot be empty!");
+      console.log("$error.find('span')", $error.find("span"), $error.find("span").innerHTML);
+
+      $error.slideDown(1000);
+      return;
     }
 
     if (tweetText.length > 140) {
@@ -67,7 +57,7 @@ $(document).ready(function () {
       // console.log("longTweet: ", longTweet);
 
       longTweet.slideDown(1000, function () {
-        $("p .error span").innerHTML =
+        $(".error").innerHTML =
           "Tweet is too long. Keep it under 140 characters!";
           return;
         });
