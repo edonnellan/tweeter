@@ -7,30 +7,32 @@ header.avatar {
   padding-top: 150px;
   background-color: #ffc496;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-
 }
+
+/* //// Makes the users lastname a lighter weight font //// */
 
 div.avatar-name span {
   font-weight: 300;
 }
 
+/* //// Media Queries //// */
+
 @media only screen and (min-width: 1207px) {
- header.avatar {
-  display: flex;
-  height: fit-content;
-  padding-top: 0px;
-  width: 100%;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  margin: 5rem;
-  margin-top: 10rem; 
- }
+  header.avatar {
+    display: flex;
+    height: fit-content;
+    padding-top: 0px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5rem;
+    margin-top: 10rem;
+  }
 
- div.header-avatar {
-  padding: 3rem;
-  background-color: #ffc496;
-  background-image: url("https://www.transparenttextures.com/patterns/arches.png");
- }
-
+  div.header-avatar {
+    padding: 3rem;
+    background-color: #ffc496;
+    background-image: url("https://www.transparenttextures.com/patterns/arches.png");
+  }
 }

@@ -6,7 +6,9 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -17,7 +19,7 @@ html {
 body {
   color: #545149;
   background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 24px;
 }
 
@@ -32,7 +34,6 @@ main {
   flex-direction: column;
   padding-inline: 5%;
   background-color: #f4f1ec;
-
 }
 
 @media only screen and (min-width: 1207px) {
@@ -41,7 +42,7 @@ main {
     flex-direction: row;
     color: #545149;
     background-color: #f4f1ec;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 24px;
   }
 }

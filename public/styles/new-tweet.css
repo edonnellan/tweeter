@@ -4,7 +4,7 @@ section.new-tweet {
 
 .error {
   display: none;
-  padding: .5rem;
+  padding: 0.5rem;
   font-weight: 600;
   border-style: solid;
   border-width: 2px;
@@ -34,7 +34,7 @@ textarea {
   border-left-style: hidden;
   border-bottom-style: "groove";
   border-width: 0.5vh;
-  background-color: #F3F1EB;
+  background-color: #f3f1eb;
   color: #535149;
   margin-bottom: 25px;
   outline: none;
@@ -49,8 +49,7 @@ textarea {
 }
 
 button {
-  color: #FFFFFF;
-  background-color: #4056A1;
+  color: #ffffff;
+  background-color: #4056a1;
   border: hidden;
 }
-

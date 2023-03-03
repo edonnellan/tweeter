@@ -4,7 +4,6 @@
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
 
-
 $(document).ready(function () {
   console.log("client.js document is ready");
 
@@ -17,7 +16,6 @@ $(document).ready(function () {
 
   //Get request for tweets
   const loadTweets = function () {
-    console.log("GET FORM?!?!");
 
     $.ajax("/tweets", {
       method: "GET",
@@ -33,17 +31,18 @@ $(document).ready(function () {
 
   //Tweet submission
   $("form").submit(function (event) {
-    event.preventDefault();//stop page refresh
+    event.preventDefault(); //stop page refresh
 
-    const formData = $(this).serialize();//ensures we're getting just the form value
+    const formData = $(this).serialize(); //ensures we're getting just the form value
 
     let tweetText = $("#tweet-text").val();
     const $error = $(".error");
-    const $errorMsg = $error.find("span");  
-    
+    const $errorMsg = $error.find("span");
+
     //check if tweet is empty
     if (!tweetText) {
-      $error.slideUp(1000, function () {//Make sure error msg if gone then deal with current error
+      $error.slideUp(1000, function () {
+        //Make sure error msg if gone then deal with current error
         $errorMsg.text("Tweet cannot be empty!");
         $error.slideDown(1000);
       });
@@ -51,32 +50,31 @@ $(document).ready(function () {
       return;
       //check if tweet is too long (> 140 chars)
     } else if (tweetText.length > 140) {
-      $error.slideUp(1000, function () {//Make sure error msg if gone then deal with current error
-        $errorMsg.text("Tweet cannot be longet than 140 characters!");
+      $error.slideUp(1000, function () {
+        //Make sure error msg if gone then deal with current error
+        $errorMsg.text("Tweet cannot be longer than 140 characters!");
         $error.slideDown(1000);
       });
 
       return;
-
-    } else { //else slide up as there is no error
+    } else {
+      //else slide up as there is no error
       $error.slideUp(1000);
     }
-    
+
     //post tweet request
     $.ajax({
       method: "POST",
       url: "/tweets",
       data: formData,
       success: (tweetResponse) => {
-
         $("textarea").val(""); //clear textarea after submit
         $(".counter").text(140); //reset counter after submit
 
         $.get("/tweets", (tweetResponse) => {
-         
           renderTweets(tweetResponse.slice(-1)); //Add newest tweet to page
         });
-      }
+      },
     });
   });
 
@@ -106,7 +104,6 @@ $(document).ready(function () {
     const tweetElement = $tweet.append(html); //adding the new tweet into page html
     return tweetElement;
   };
-
 
   //takes in database array of tweet objects. Uses createTweetElement to convert to html and adds the newest tweet at the top
   const renderTweets = function (tweets) {
