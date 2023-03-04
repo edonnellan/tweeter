@@ -12,7 +12,7 @@ Less Musk, more fun from dawn till dusk!
 !["Tweeter GIF demo."](https://github.com/edonnellan/tweeter/blob/master/docs/Tweeter%20GIF.gif)
 !["Tweeter desktop layout"](https://github.com/edonnellan/tweeter/blob/master/docs/Tweeter%20desktop%20layout.png)
 !["Over 140 characters error"](https://github.com/edonnellan/tweeter/blob/master/docs/Over%20140%20character%20error%20message.png)
-!["Tweets hover shadow and icon colour change"](https://github.com/edonnellan/tweeter/blob/master/docs/Tweets%20with%20shaow%20and%20hover%20color%20change%20icon.png)
+!["Tweets hover shadow and icon colour change"](https://github.com/edonnellan/tweeter/blob/master/docs/Tweets%20with%20shadow%20and%20hover%20color%20change%20icon.png)
 
 ## Getting Started
 
